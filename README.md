@@ -1,41 +1,103 @@
-# As Fine Basith Portfolio
+# asfinebasith-portfolio
 
-Website portfolio pribadi yang menampilkan profil singkat, fokus pengembangan, dan beberapa proyek unggulan dari GitHub.
+Portfolio pribadi As Fine Basith yang dibangun dengan React dan Vite. Website ini menampilkan profil profesional, proyek unggulan, nilai kerja, dan tautan kontak dalam tampilan portfolio yang ringan dan modern.
 
-## Isi Website
+## Stack
 
-- Hero section dengan ringkasan profil
-- Tentang saya
-- Daftar proyek unggulan
-- Nilai kerja dan fokus pengembangan
-- Tautan ke GitHub dan media sosial
+- React 18
+- Vite
+- CSS custom
 
-## Teknologi
+## Fitur
 
-- HTML
-- CSS
-- JavaScript
+- Hero section dengan ringkasan profil dan fokus kerja
+- Section tentang saya
+- Proyek unggulan yang dikurasi
+- Nilai kerja dan pendekatan teknis
+- CTA ke GitHub, LinkedIn, dan email
 
 ## Menjalankan Secara Lokal
 
-Buka file `index.html` langsung di browser, atau jalankan server lokal sederhana:
+Install dependency:
 
 ```bash
-python3 -m http.server 8000
+npm install
 ```
 
-Lalu akses:
+Jalankan mode development:
+
+```bash
+npm run dev
+```
+
+Build production:
+
+```bash
+npm run build
+```
+
+Preview hasil build:
+
+```bash
+npm run preview
+```
+
+## Struktur Singkat
 
 ```text
-http://localhost:8000
+src/
+  components/   komponen UI utama
+  data/         data konten portfolio
+  App.jsx       komposisi halaman
+  index.css     design system dan styling global
+  main.jsx      entry React
+public/
+  img/          aset gambar
 ```
 
-## Repo Proyek
+## Deploy ke Vercel
 
-Daftar proyek yang ditampilkan di website ini diambil dari akun GitHub berikut:
+Repo ini sudah siap untuk deploy ke Vercel sebagai static site berbasis Vite.
 
-[https://github.com/Basith-08](https://github.com/Basith-08)
+### Opsi 1: Via Dashboard Vercel
+
+1. Import repository `asfinebasith-portfolio` ke Vercel
+2. Pastikan framework terdeteksi sebagai `Vite`
+3. Gunakan konfigurasi berikut:
+
+```text
+Build Command   : npm run build
+Output Directory: dist
+Install Command : npm install
+```
+
+### Opsi 2: Via Vercel CLI
+
+Login:
+
+```bash
+vercel login
+```
+
+Deploy preview:
+
+```bash
+vercel deploy
+```
+
+Deploy production:
+
+```bash
+vercel deploy --prod
+```
+
+Catatan:
+
+- Konfigurasi deploy eksplisit ada di `vercel.json`
+- Karena ini bukan lagi GitHub Pages repo utama, nama repository `asfinebasith-portfolio` aman dipakai untuk Vercel
 
 ## Catatan
 
-Portfolio ini dirancang sebagai halaman statis yang ringan, mudah dibuka, dan mudah disesuaikan kembali saat ada proyek baru.
+- Repo ini sebelumnya berupa HTML, CSS, dan JavaScript native, lalu dimigrasikan ke React + Vite.
+- Konten proyek unggulan dikelola dari `src/data/portfolio.js`.
+- Styling utama dan design system ringan berada di `src/index.css`.
