@@ -24,6 +24,11 @@ export default function ProjectCard({ project }) {
             {project.ctaLabel ?? "Private Repo"}
           </span>
         )}
+        {project.liveUrl ? (
+          <a href={project.liveUrl} target="_blank" rel="noreferrer">
+            Lihat Live
+          </a>
+        ) : null}
       </div>
     </article>
   );

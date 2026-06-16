@@ -36,8 +36,8 @@ export const projects = [
     title: "civiAlert",
     isLatest: true,
     description:
-      "Bot Telegram untuk notifikasi operasional, approval pengguna, dan kontrol LMS. Proyek ini menonjolkan fokus saya pada automasi alur kerja, integrasi sistem, dan tooling internal yang dipakai pada kebutuhan operasional nyata.",
-    tags: ["Go", "Telegram Bot", "Approval Flow", "LMS"],
+      "CiviAlert adalah bot Telegram privat untuk sinkronisasi, notifikasi, dan kontrol terbatas LMS ITTS. Aplikasi ini mengambil data LMS ke PostgreSQL lokal, lalu mengirim reminder dan update penting ke Telegram dengan kontrol owner per akun.Bot Telegram untuk notifikasi operasional, approval pengguna, dan kontrol LMS. Proyek ini menonjolkan fokus saya pada automasi alur kerja, integrasi sistem, dan tooling internal yang dipakai pada kebutuhan operasional nyata.",
+    tags: ["Go", "Telegram Bot", "Automation", "LMS"],
     repoUrl: "",
     ctaLabel: "Private Repo",
   },
@@ -51,6 +51,7 @@ export const projects = [
     tags: ["Vue 3", "TypeScript", "PrimeVue", "Pinia", "Vite"],
     repoUrl: "https://github.com/Basith-08/garda-KawalMBG-prototype",
     ctaLabel: "Repo",
+    liveUrl: "https://garda-kawal-mbg-prototype.vercel.app/",
   },
   {
     accentClass: "accent-violet",
